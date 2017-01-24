@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap3',
     'invoices',
+    'customers',
 ]
 
 MIDDLEWARE = [
@@ -54,8 +55,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'middleware.LoginRequiredMiddleware',
-    'always_authenticated.middleware.AlwaysAuthenticatedMiddleware',
+    'recolecciones_borja.middleware.LoginRequiredMiddleware',
+    #'always_authenticated.middleware.AlwaysAuthenticatedMiddleware',
 ]
 
 # Middleware config
@@ -163,5 +164,5 @@ DATE_INPUT_FORMATS = ('%d/%m/%Y',)
 DATE_FORMAT = 'd/m/Y'
 
 # Login
-LOGIN_URL = '/login'
-LOGIN_REDIRECT_URL = '/menu'
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/menu/'

@@ -28,6 +28,8 @@ urlpatterns = [
     url(r'^menu/', TemplateView.as_view(template_name='index.html')),
     # Invoices app urls
     url(r'^invoices/', include('invoices.urls')),
+    # Customers app urls
+    url(r'^customers/', include('customers.urls')),
     # Admin site urls
     url(r'^admin/', admin.site.urls),
 ]
