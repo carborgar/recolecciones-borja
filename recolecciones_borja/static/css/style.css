@@ -1,0 +1,136 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 65px;
+    padding-bottom: 40px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 65px;
+    background-color: #7E8C8D;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.credit {
+    margin: 20px 0;
+}
+
+.credit a {
+    color: #FFF;
+}
+
+#content {
+    /*padding-top: 60px;*/
+}
+
+.form-group.required .control-label:after {
+    content: " (*)";
+    color: #E74C3C;
+}
+
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+
+    .dl-horizontal dt {
+        text-align: left;
+    }
+}
+
+.diggy-pagination > a, .diggy-pagination > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #337ab7;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+}
+
+.diggy-pagination > a:hover, .diggy-pagination > span:hover {
+    z-index: 3;
+    color: #23527C;
+    background-color: #EEE;
+    border-color: #DDD;
+}
+
+.diggy-pagination > .endless_page_current {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    cursor: default;
+}
+
+.diggy-pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+dd {
+    margin: 0 0 5px 0;
+}
+
+.page-header {
+    border-bottom: 1px solid #EEE;
+}
+
+td, th {
+    vertical-align: middle;
+}
+
+th:last-child, td:last-child {
+    text-align: center
+}
+
+textarea {
+    resize: none;
+    max-height: 150px;
+}
+
+.chosen-container {
+    width: 100% !important;
+}
+
+.table tbody > tr > td {
+    vertical-align: middle;
+}
+
+table > tbody > tr > td > ul {
+    margin: 0;
+}
+
+.panel-borja{
+    border-color: #2C3E50;
+    color: #FFF;
+}
+
+.panel-borja > .panel-heading{
+    background-color: #2C3E50;
+}
