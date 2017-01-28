@@ -1,4 +1,5 @@
 django
+django-tables2
 django-bootstrap3
 git+git://github.com/carborgar/django-chosen.git
 django-bootstrap3-datetimepicker

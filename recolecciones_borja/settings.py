@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'invoices',
     'customers',
+    'django_tables2',
 ]
 
 MIDDLEWARE = [
