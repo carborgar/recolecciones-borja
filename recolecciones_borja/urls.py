@@ -23,9 +23,9 @@ urlpatterns = [
     url(r'^login/$', auth_views.login, {'template_name': 'auth/login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout_then_login, name="logout"),
     # Welcome url is login page
-    url(r'^$', RedirectView.as_view(pattern_name='login', permanent=False)),
+    url(r'^$', RedirectView.as_view(pattern_name='menu', permanent=False)),
     # Applications menu page
-    url(r'^menu/', TemplateView.as_view(template_name='index.html')),
+    url(r'^menu/', TemplateView.as_view(template_name='index.html'), name='menu'),
     # Invoices app urls
     url(r'^invoices/', include('invoices.urls')),
     # Customers app urls
